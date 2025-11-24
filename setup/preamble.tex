@@ -1,0 +1,59 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PREAMBLE: Imports and Customization  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% NOTE: Do NOT include \documentclass or \begin{document}/\end{document} here!
+% This file is meant to be included from your main.tex.
+
+%%%%%%%%%%%%%%% Formatting %%%%%%%%%%%%%%%
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{sectsty}
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%%% Font %%%%%%%%%%%%%%%
+\usepackage{Archivo}
+\usepackage[T1]{fontenc}
+
+%%%%%%%%%%%%%%% Graphics %%%%%%%%%%%%%%%
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{tikz}
+\tcbuselibrary{breakable}
+
+%%%%%%%%%%%%%%% Miscellaneous %%%%%%%%%%%%%%%
+\usepackage{lipsum}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%%
+\definecolor{title}{HTML}{333F50}
+\definecolor{backdrop}{HTML}{f2f2f2}
+\definecolor{lightgray}{HTML}{b8b8b8}
+
+
+% Force color loading
+\colorlet{title}{title}
+
+%%%%%%%%%%%%%%% Section Format %%%%%%%%%%%%%%%
+\sectionfont{
+    \LARGE
+    \sectionrule{0pt}{0pt}{-8pt}{1pt}
+}
+\subsectionfont{
+    \large
+    \fontfamily{phv}\selectfont
+    \sectionrule{0pt}{0pt}{-8pt}{1pt}
+}
+
+%%%%%%%%%%%%%%% Margins and Headers %%%%%%%%%%%%%%%
+\geometry{
+  a4paper,
+  left=7mm,
+  right=7mm,
+  bottom=10mm,
+  top=10mm
+}
+\pagestyle{empty}

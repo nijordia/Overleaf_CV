@@ -1,0 +1,159 @@
+Nicolas J. Aguilar
+Software Engineer
+# nicolasjordi.aguilar@gmail.com · I +34 634 089 567
++ Barcelona, Spain · ï Nicolas J. · § nijordia · l Portfolio
+
+Programming Languages
+
+Achievements
+ Dockerized Python suit for +15M record pipeline on AWS EC2.
+
+python for data analysis, machine learning, automation, forecasting, game development, web scraping and API development
+
+JavaScript frontend backend Node.js React and svelte 5 with runes
+
+5 Up to 80% time savings via Tk and Tampermonkey automation.
+Sqlite database queries data manipulation
+
+HTML web development markup language
+
+LaTeX document preparation typesetting
+
+5 Copernicus integration for quasi-experimental model on ENSO.
+
+R for statistical analysis data science and geospatial analysis
+
+Professional Experience
+
+Cloud & Tools
+
+Aws for cloud computing EC2 S3 Lambda and S3 buckets
+
+Data Engineer
+Amazon Logistics, Barcelona
+
+Docker for containerization deployment DevOps
+
+Linux system administration command line
+
+Jun 2024 – Present
+
+Tampermonkey for browser automation scripting
+
+Git for version control collaboration
+
+Overleaf LaTeX online editor collaboration
+
+• Last-mile capacity planning for +300 delivery stations across Europe.
+• Microservice development for automation and HPC-scalable ETLs
+
+Software Developer
+Inèdit, Barcelona
+
+Languages
+
+Jan 2024 – Apr 2024
+
+• Consultancy specialized in envirionmental foorprint and life cycle analysis.
+
+Spanish Native fluent speaker native proficiency
+
+• Contract for introducing programming tools into the company’s workflow.
+
+English Fluent business proficient international communication
+
+German Intermediate conversational business level
+
+French Intermediate conversational basic business
+
+Business Data Analyst
+Abacus Medicine, Copenhagen
+
+Sep 2020 – Aug 2022
+
+• Pharmaceutical wholeseller with an arbitrage strategy.
+• Built pipeline and dashboard to detect price differentials between markets.
+
+Economist
+Focus Economics, Barcelona
+
+Sep 2018 – Aug 2020
+
+• Research agency delivering macroeconomic forecasts for +130 countries.
+• Lead the monthly publication of +10 country and commodities reports.
+
+Education
+M.Sc. Environmental Economics
+University of Copenhagen
+
+2020–2022
+
+Thesis: R-based climate-financial risk model using GRIB/NetCDF files
+
+B.Sc. Economics, Politics and Philosophy
+UPF, UAM, UC3M and UZH
+
+2014–2018
+
+Internships
+Research Economist
+CETAQUA, Veolia Group, Barcelona
+
+May 2023 – Oct 2023
+
+Research on water footprint, quantitative drought models, and innovative finance in the utilities sector.
+
+Business Developer
+Decision Risk Analytics, Copenahgen
+
+Jan 2023 – May 2023
+
+Start-up company commercializing software for corporate risks management using the Montecarlo simulation method.
+
+Courses
+Svelte 5 and SvelteKit: The Complete Guide
+Svelte.dev
+
+2025
+
+Comprehensive guide to building web applications using Svelte 5 with runes.
+
+Full Stack Open: Modern Web Development
+University of Helsinki
+
+2024
+
+Build and deploy modern application using React, Prisma and Supabase.
+
+Probability Analysis
+MITx
+
+2023
+
+Probabilistic modeling, statistical inference, Bayesian methods for data-driven decision making.
+
+Volunteering and Performance
+Lead Developer
+Estela
+
+2024 – Present
+
+Open-source Svelte 5 platform for estimating organization carbon footprints and reduction strategies.
+
+Magician
+Catalan Society of Illusionism, Barcelona
+
+2018 – Present
+
+Open performances at events, workshops for children, and charity shows.
+
+Staff Member & Volunteer Magician
+Mellemfolkeligt Samvirke, Copenhagen
+Coordination of the NGO ran cafe and cultural events; magic shows, stand-up and concerts.
+
+Personal and Interests
+Personal interests and hobbies that showcase personality and additional skills.
+
+2021 – 2023
+
+

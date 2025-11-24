@@ -1,0 +1,92 @@
+\documentclass[11pt,a4paper]{article}
+
+\newif\ifFAANG
+\newif\ifStartup
+\newif\ifClimate
+\newif\ifGaming
+\Gamingtrue
+
+\input{setup/preamble.tex}
+\input{setup/macros.tex}
+
+\begin{document}
+\raggedbottom
+
+%%% HEADER %%%
+\input{sections/header.tex}
+
+%%% PAGE 1: TWO-COLUMN LAYOUT WITH SIDEBAR %%%
+\tcbset{colframe=white,colback=white,arc=0mm}
+\begin{tcolorbox}
+    \vspace*{-0.5em}
+    \begin{minipage}[t]{0.35\textwidth}
+        \begin{tcolorbox}[height=0.8\textheight, grow to left by=0.8cm, colback=backdrop, colframe=backdrop, arc=0mm]
+            \input{sections/sidebar.tex}
+        \end{tcolorbox}
+    \end{minipage}%
+    \begin{minipage}[t]{0.62\textwidth}
+        \begin{tcolorbox}[grow to right by=0.9cm, height=0.8\textheight, colframe=white, colback=white, arc=0mm]
+            %%% ACHIEVEMENTS %%%
+  
+            \ifFAANG
+                \input{sections/achievements-faang.tex}
+            \fi
+            \ifStartup
+                \input{sections/achievements-startup.tex}
+            \fi
+            \ifClimate
+                \input{sections/achievements-climate.tex}
+            \fi
+            \ifGaming
+                \input{sections/achievements-gaming.tex}
+            \fi
+
+
+            %%% EXPERIENCE %%%
+            \section*{Professional Experience}
+                \input{sections/experience-amazon.tex}
+                \input{sections/experience-inedit.tex}
+                \input{sections/experience-abacus.tex}
+                \input{sections/experience-focus.tex}
+       
+            %%% EDUCATION %%%
+            \vspace*{-2em}
+            \input{sections/education.tex}
+        \end{tcolorbox}
+    \end{minipage}
+\end{tcolorbox}
+
+%%% FOOTER FOR PAGE 1 %%%
+\input{sections/footer.tex}
+
+\clearpage
+
+%%% PAGE 2: FULL-WIDTH LAYOUT (NO SIDEBAR) %%%
+\begin{tcolorbox}
+    \begin{minipage}[t]{\textwidth}
+        \begin{tcolorbox}[colframe=white, colback=white, arc=0mm, height=0.88\textheight]
+            
+            %%% INTERNSHIPS %%%
+            \section*{Internships}
+            \input{sections/internships.tex}
+            \vspace*{-1em}
+            %%% COURSES %%%
+            \section*{Courses}
+            \input{sections/courses.tex}
+            \vspace*{-1em}
+            %%% VOLUNTEERING AND PERFORMANCE %%%
+            \section*{Volunteering and Performance}
+            \input{sections/volunteering.tex}
+            \vspace*{-1em}
+            %%% PERSONAL AND INTERESTS %%%
+            \section*{Personal \& Interests}
+            \input{sections/interests.tex}
+            
+        \end{tcolorbox}
+    \end{minipage}
+\end{tcolorbox}
+
+%%% FOOTER FOR PAGE 2 %%%
+\input{sections/footer.tex}
+
+\end{document}
