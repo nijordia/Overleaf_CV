@@ -1,6 +1,15 @@
 %%% SIDEBAR: SKILLS & LANGUAGES %%%
 \begin{tcolorbox}[colback=backdrop, colframe=backdrop, coltext=black, arc=0mm]
     
+    \ifES
+    \subsection*{Acerca de}
+    \noindent
+    \small
+    \lowercase{\jobtitle} ingenioso y apasionado por la tecnología, siempre en busca de nuevos desafíos.
+    Experiencia en ETLs, almacenes de datos, dashboards y analítica web,
+    especializado en transformar datos complejos en acciones medibles.
+    Jugador de equipo comprometido con mentalidad multidisciplinaria.
+    \else
     \subsection*{About}
     \noindent
     \small
@@ -8,6 +17,7 @@
     Experienced in ETLs, data warehause, dashboards, and web analytics and
     a specialist in digesting complex data into measurable actions.
     Committed team player with a multidisciplinary mindset.
+    \fi
     
     
     \atsboost{As a Data Engineer with experience in building and maintaining ML pipelines, I excel in implementing MLOps best practices to enhance data workflows. My proficiency in Python and understanding of data science processes allow me to collaborate effectively with data scientists and analysts. I have a strong focus on developing scalable solutions that integrate seamlessly with products via APIs and databases. My background includes creating personalized recommendation systems that significantly boost player engagement and satisfaction. I thrive in a collaborative environment, leveraging my skills in feature engineering and model deployment to address business needs and drive innovation within the gaming industry. I am eager to contribute to Gameloft's mission of delivering exceptional gaming experiences through robust data solutions.}
@@ -15,7 +25,11 @@
 
 
     
+    \ifES
+    \subsection*{Lenguajes de Programación}
+    \else
     \subsection*{Programming Languages}
+    \fi
     \noindent
     \skillbadgeats[for data analysis machine learning automation forecasting with pandas numpy scipy matplotlib seaborn plotly data visualization web frameworks FastAPI Django Flask Streamlit REST APIs data science scikit-learn tensorflow pytorch keras deep learning neural networks jupyter notebooks cloud deployment boto3 AWS SDK docker-py containerization requests HTTP asyncio asynchronous programming database connectivity sqlalchemy pymongo psycopg2 PostgreSQL testing pytest unittest mock web scraping BeautifulSoup selenium API development data pipelines ETL workflows data engineering]{python}
     \skillbadgeats[frontend backend full stack development Node.js Express.js React Vue.js Svelte 5 with runes TypeScript modern JavaScript ES6 ES7 webpack bundling npm package management async await promises DOM manipulation event handling AJAX fetch API single page applications SPA component-based architecture state management Redux Vuex responsive web design progressive web apps PWA serverless functions]{JavaScript}\\[0.3em]
@@ -26,7 +40,11 @@
 
     \vspace{1em}
         
+    \ifES
+    \subsection*{Cloud y Herramientas}
+    \else
     \subsection*{Cloud \& Tools}
+    \fi
     \noindent
     \skillbadgeats[for cloud computing Amazon Web Services EC2 virtual servers compute instances S3 storage buckets object storage data warehouse Lambda serverless functions RDS relational database service DynamoDB CloudFormation infrastructure as code IAM identity access management VPC networking CloudWatch monitoring SNS SQS messaging services API Gateway Elastic Beanstalk cloud architecture scalability]{Aws}
     \skillbadgeats[for containerization deployment DevOps Docker containers Kubernetes K8s orchestration container orchestration microservices Docker Compose multi-container applications dockerfile image building container registry deployment automation CI/CD continuous integration continuous deployment infrastructure scalability cloud-native applications]{Docker}\\[0.3em]
@@ -37,7 +55,11 @@
    
     \vspace{1em}
         
+    \ifES
+    \subsection*{Idiomas}
+    \else
     \subsection*{Languages}
+    \fi
     \noindent
     \langbadgeats[fluent speaker native proficiency]{Spanish}{Native}\\[0.3em]
     \langbadgeats[business proficient international communication]{English}{Fluent}\\[0.3em]
@@ -46,7 +68,11 @@
 
     \vspace{1em}
 
+    \ifES
+    \subsection*{Herramientas IA}
+    \else
     \subsection*{AI Tools}
+    \fi
     \noindent
     \ailogoats[artificial intelligence chatbot GPT-4 prompt engineering and API connection for developing custom apps and chatbots.]{ChatGPT\_logo}
     \ailogoats[Claude AI assistant Anthropic prompt engineering]{Claude\_AI\_logo}\\[0.4em]

@@ -5,6 +5,7 @@
 \newif\ifClimate
 \newif\ifGaming
 \Gamingtrue
+\newif\ifES
 \input{setup/preamble.tex}
 \input{setup/macros.tex}
 
@@ -39,7 +40,11 @@
 
 
             %%% EXPERIENCE %%%
+            \ifES
+            \section*{Experiencia Profesional}
+            \else
             \section*{Professional Experience}
+            \fi
                 \input{sections/experience-amazon.tex}
                 \input{sections/experience-inedit.tex}
                 \input{sections/experience-abacus.tex}
@@ -63,19 +68,35 @@
         \begin{tcolorbox}[colframe=white, colback=white, arc=0mm, height=0.88\textheight]
             
             %%% INTERNSHIPS %%%
+            \ifES
+            \section*{Pasantías}
+            \else
             \section*{Internships}
+            \fi
             \input{sections/internships.tex}
             \vspace*{-1em}
             %%% COURSES %%%
+            \ifES
+            \section*{Cursos}
+            \else
             \section*{Courses}
+            \fi
             \input{sections/courses.tex}
             \vspace*{-1em}
             %%% VOLUNTEERING AND PERFORMANCE %%%
+            \ifES
+            \section*{Voluntariado y Presentaciones}
+            \else
             \section*{Volunteering and Performance}
+            \fi
             \input{sections/volunteering.tex}
             \vspace*{-1em}
             %%% PERSONAL AND INTERESTS %%%
+            \ifES
+            \section*{Personal e Intereses}
+            \else
             \section*{Personal \& Interests}
+            \fi
             \input{sections/interests.tex}
             
         \end{tcolorbox}
