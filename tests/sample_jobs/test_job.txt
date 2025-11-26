@@ -1,108 +1,104 @@
 
-Full Stack Engineer
-Barcelona, Catalonia, Spain · 3 weeks ago · Over 100 applicants
+Gameloft logo
+Data Engineer
 
-Promoted by hirer · Actively reviewing applicants
-Full Stack Engineer
-EarthPulse · Barcelona, Catalonia, Spain (Hybrid)
-See how you compare to over 100 other applicants
+    Full-time
+    Manager Role: No
+    Work Model: Hybrid
 
-Access exclusive applicant insights, see jobs where you have the highest chance of hearing back, and more.
-Reactivate Premium: 50% Off
-About the job
+Company Description
 
-About us:
+Are You Looking for a Great Place to Work? #Jointhegame 
 
+Leader in the development and publishing of mobile games, Gameloft® has established itself as one of the top innovators in its field since 2000. Gameloft creates games for all digital platforms, two of which are featured in the “Top 10 Games by All-Time Worldwide Downloads” from App Annie. Gameloft operates its own established franchises such as Asphalt®, Order & Chaos, Modern Combat and Dungeon Hunter and also partners with major rights holders including Universal, Illumination Entertainment, Disney®, Marvel®, Hasbro®, Fox Digital Entertainment, Mattel® and Ferrari®. Gameloft distributes its games in over 100 countries and employs 4,600 people worldwide. Every month, 114 million unique users can be reached by advertisers in Gameloft games with Gameloft Advertising Solutions, a leading B2B offering dedicated to brands and agencies. Gameloft is a Vivendi company.
 
-EarthPulse is a NewSpace company on a mission to simplify complex satellite data using Artificial Intelligence, enabling organizations to make faster, evidence-based decisions for climate resilience, infrastructure, and natural resources. Founded in 2020, our platform turns Earth Observation (EO) data into actionable insights, serving clients in Utilities, Insurance, and ESG.
+All trademarks referenced above are owned by their respective trademark owners.
+Job Description
 
+We’re hiring a data engineer that will collaborate closely with the Data Science team to implement their projects, acting as a key point of contact and translating their needs into robust and scalable data solutions. You will also work closely with Big Data Engineers and Analysts, fostering a collaborative environment to share knowledge, tech stacks, and best practices. This partnership will ensure we leverage collective expertise to build and maintain optimal data solutions, driving innovation and efficiency across the organization. 
 
-Our Mission
+In this role you will tackle challenging projects like developing personalized recommendation systems to increase player enjoyment and building prediction models to proactively address player needs. Your work will have a measurable impact on our games' performance and be a key driver for player engagement. 
 
+We’re looking for a data/ML engineer who enjoys collaborating and learning within a team. You'll have access to mentorship from experienced engineers to help you grow your skills and contribute effectively.  
 
-    Unlock the full potential of Earth Observation (EO) data
-    Apply AI to reduce data complexity and cost
-    Deliver actionable insights for operational and policy decisions
-    Build tools that make satellite intelligence easy to use
+Daily responsibilities 
 
+    Build and maintain ML pipelines for deploying and monitoring ML models. 
 
-Position Overview
+    Implement MLOps best practices in our workflows. 
 
+    Integrate data science processes within engineering standards to promote consistency and maintainability. 
 
-We’re looking for a Full Stack Developer to drive innovation and delivery across our research and development initiatives. This role that blends hands-on full-stack and AI engineering.
+    Integrate ML Pipelines with products via APIs, databases, or other solutions. 
 
+    Provide support to analysts and data scientists, assisting with data exploration, feature engineering, and model deployment. 
 
-This role is ideal for someone who thrives at the intersection of technical depth and project execution in research-driven environments.
-
-
-Key Responsibilities
-
-
-    Execute projects with rigor in processes, focusing on results and final delivery to clients.
-    Develop full stack applications. Design and implement software components across the stack (front-end, back-end, APIs, cloud, AI services)
-    Prepare comprehensive reports and user-friendly documentation that translate technical findings into actionable insights for clients.
-    Ensure technical excellence, reproducibility, and integration of research outputs into production systems
-
-
+ 
 Qualifications
 
+    Data / ML engineer with 1-3 years experience. 
 
-    Proven 5+ years of experience in software engineering, ideally Full Stack
-    Strong programming skills (e.g., Python, JavaScript, cloud-based deployment, AI/ML pipelines)
-    Proficiency developing HTML, CSS and Javascript frontends, with Sveltekit, Tailwind or similar, Python backends, with FastAPI or similar.
-    Experience with databases, such as MongoDB.
-    Experience with Docker and Docker Compose.
-    Experience with cloud environments such as AWS or GCP.
-    Experience with Cloud services such as S3, Docker Registry, etc.
-    Understanding of EO data and satellite imagery is highly valued
-    Fluent in English; Spanish and/or Catalan are a plus
+    Experience in at least one common query language. 
 
+    Knowledge of Python. 
 
-What We Offer
+    Ability to understand the business needs. 
 
+    Ability to tailor technical solution to user and client requirements. 
 
-    Full-time permanent role with competitive salary based on experience.
-    Flexible working hours and hybrid work model (Barcelona HQ + remote).
-    A strategic role at the heart of EarthPulse’s innovation strategy.
-    Opportunities to define the next generation of AI4EO capabilities.
-    Work alongside a multidisciplinary and passionate team in a fast-scaling NewSpace environment.
+    General knowledge of ML algorithms and techniques 
 
+Additional Information
 
-Hiring process 
+Why Join the World of Gameloft?
 
+    Because you want to be part of an exceptional experience within a company that is constantly growing!
+    Because you want to work with talented people who are industry pioneers!
+    Because you want to be part of an international environment with daily contact with other countries & cultures!
+    Or, just because you’re looking for a great place to work!
 
-The candidate will be asked to solve a technical challenge. After its completion, at least 2 interviews will be preformed (with CTO and CEO, respectively).
+Benefits:
 
-What we offer
+    Permanent contract, full-time job with excellent Social Benefits.
+    25 vacation days per year
+    Private medical health insurance
+    Flexible compensation with Ticket Restaurant Card
+    Flexible work from home hybrid model 
+    Free language courses
+    Birthday day off!
+    1 month of remote work 
+    Merit based salary progression system and a competitive initial salary package.
+    Career-development opportunities.
+    Excellent local working conditions (quality of offices, geographical location of office in the centre of Barcelona).
+    ... and Thursday afterwork beers!
 
+We can’t wait to find our next great talent!
 
-    A full-time permanent position with a competitive salary based on experience.
+Please note that only selected candidates will be contacted and your CV will be saved in our files for a period of 6 months.
 
+Want to know more? Please visit our Website: www.gameloft.com
 
-    Flexible working hours and a hybrid work model (remote/presential balance).
+If the offer interests you, Join the Game!
+Privacy Policy
+share this job
 
+Other jobs at Gameloft
 
-    A dynamic work environment with opportunities to shape Earthpulse’s market presence.
+    Product Specialist Assistant (6-month internship)
 
+    Milan, Italy
 
-    Be part of a talented, mission-driven team at the forefront of AI and satellite data innovation.
+    International Recruiter
 
+    Lviv, Ukraine
 
-    Join a fast-growing company in the NewSpace industry and have a direct impact on global marketing initiatives.
+    Lead Game Designer
 
+    Bucharest, Romania
+    Show all jobs
 
-Location: Barcelona, Spain
+Data Engineer
 
+    Barcelona, Spain
+    Full-time
 
-About the company
-EarthPulse company logo
-EarthPulse
-4,129 followers
-IT Services and IT Consulting 2-10 employees 14 on LinkedIn
-
-Our mission is to unlock the value of Earth Observation data.
-We use Artificial Intelligence to absorb complexity and cost, providing actionable knowledge to our users.
-
-Complex data, made easy. …
-
-Show more

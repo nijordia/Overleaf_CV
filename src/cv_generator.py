@@ -14,26 +14,18 @@ class CVGenerator:
         self.file_targets = config_manager.get_file_targets()
 
     def update_header_title(self, role_title: str) -> bool:
-        """
-        Update job title in sections/header.tex.
-
-        Args:
-            role_title: The job title to set (e.g., "Senior Software Engineer")
-
-        Returns:
-            True if successful, False otherwise
-        """
+        """Update job title in sections/header.tex and setup job title variable."""
         header_path = Path(self.file_targets['header_file'])
+        macros_path = Path("setup/macros.tex")
 
         try:
+            # Update header title (existing logic)
             with open(header_path, 'r', encoding='utf-8') as f:
                 content = f.read()
 
-            # Pattern matches: {\large\bfseries Python Developer}\par
             pattern = self.file_targets['header_title_pattern']
             replacement = f'\\1{role_title}\\3'
 
-            # Check if pattern exists
             if not re.search(pattern, content):
                 print(f"Warning: Could not find header title pattern in {header_path}")
                 return False
@@ -43,16 +35,30 @@ class CVGenerator:
             with open(header_path, 'w', encoding='utf-8') as f:
                 f.write(content)
 
-            return True
+            # NEW: Update job title variable in macros.tex
+            with open(macros_path, 'r', encoding='utf-8') as f:
+                macros_content = f.read()
 
-        except FileNotFoundError:
-            print(f"Error: Header file not found: {header_path}")
-            return False
+            # Pattern to match: \newcommand{\jobtitle}{Data Analyst}
+            title_pattern = r'(\\newcommand\{\\jobtitle\}\{)([^}]+)(\})'
+            title_replacement = f'\\1{role_title}\\3'
+
+            if re.search(title_pattern, macros_content):
+                macros_content = re.sub(title_pattern, title_replacement, macros_content)
+                
+                with open(macros_path, 'w', encoding='utf-8') as f:
+                    f.write(macros_content)
+                
+                print(f"Updated job title variable: {role_title}")
+            else:
+                print("Warning: Could not find job title variable in macros.tex")
+
+            return True
+            
         except Exception as e:
             print(f"Error updating header title: {e}")
             return False
-
-
+        
     def update_version_flags(self, version: str) -> bool:
         """
         Update CV version flags in main.tex.
@@ -116,16 +122,7 @@ class CVGenerator:
             return False
 
     def generate_cv(self, analysis_result: Dict, output_name: Optional[str] = None) -> bool:
-        """
-        Generate complete CV by updating all files and compiling.
-
-        Args:
-            analysis_result: Dict with role, version, ats_text, keywords
-            output_name: Optional custom output filename
-
-        Returns:
-            True if all updates successful
-        """
+        """Generate complete CV by updating all files."""
         success = True
 
         # Update header title
@@ -133,8 +130,11 @@ class CVGenerator:
             print("Failed to update header title")
             success = False
 
-        # Update ATS boost
-        if not self.update_ats_boost(analysis_result['ats_text']):
+        # Update ATS boost WITH keywords
+        if not self.update_ats_boost(
+            analysis_result['ats_text'], 
+            analysis_result.get('keywords', [])  # Pass the extracted keywords
+        ):
             print("Failed to update ATS boost text")
             success = False
 
@@ -144,6 +144,9 @@ class CVGenerator:
             success = False
 
         return success
+
+
+
 
     def compile_pdf(self, output_name: Optional[str] = None) -> bool:
         """
@@ -221,26 +224,33 @@ class CVGenerator:
                     pass
 
           
-    def update_ats_boost(self, ats_text: str) -> bool:
-        """Update ATS boost text in sections/sidebar.tex."""
+    def update_ats_boost(self, ats_text: str, keywords: list = None) -> bool:
+        """Update ATS boost text and keywords in sections/sidebar.tex."""
         sidebar_path = Path(self.file_targets['sidebar_file'])
 
         try:
             with open(sidebar_path, 'r', encoding='utf-8') as f:
                 content = f.read()
 
-            # ONLY replace the content inside braces - NEVER touch \atsboost command
+            # 1. Update main ATS boost text (existing logic)
             pattern = r'(\\atsboost\{)(.*?)(\})'
             replacement = f'\\1{ats_text}\\3'
 
-            # Check if pattern exists
             if not re.search(pattern, content, re.DOTALL):
                 print(f"Warning: Could not find \\atsboost pattern in {sidebar_path}")
                 return False
 
-            # Replace ONLY the content inside braces
-            content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+            # Replace first atsboost (main text)
+            content = re.sub(pattern, replacement, content, count=1, flags=re.DOTALL)
 
+            # 2. NEW: Replace KEYWORDS_PLACEHOLDER with job-specific keywords
+            if keywords and 'KEYWORDS_PLACEHOLDER' in content:
+                # Format keywords as comma-separated string
+                keyword_text = ', '.join(keywords[:15])  # Limit to 15 keywords
+                content = content.replace('KEYWORDS_PLACEHOLDER', keyword_text)
+                print(f"Updated keyword placeholder with {len(keywords)} keywords")
+
+            # 3. Write updated content
             with open(sidebar_path, 'w', encoding='utf-8') as f:
                 f.write(content)
 
