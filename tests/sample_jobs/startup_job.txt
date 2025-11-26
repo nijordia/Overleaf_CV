@@ -1,0 +1,41 @@
+Full Stack Developer - Early Stage Startup
+
+We're an exciting early-stage startup building the next generation of collaborative tools. We're looking for a versatile full-stack developer who thrives in a fast-paced, agile environment.
+
+About us:
+- Pre-seed startup with $2M in funding
+- Small, talented team of 8 people
+- Move fast, ship often, iterate quickly
+- Flat hierarchy, everyone has a voice
+
+What you'll do:
+- Build features across the entire stack (React frontend, Node.js backend)
+- Make architectural decisions and shape our technical direction
+- Wear multiple hats - frontend, backend, DevOps, whatever it takes
+- Ship MVPs quickly and iterate based on user feedback
+- Work directly with founders and customers
+
+Requirements:
+- 2-4 years of full-stack development experience
+- Strong JavaScript/TypeScript skills
+- Experience with React and Node.js
+- Comfortable with ambiguity and rapid change
+- Self-starter who takes initiative
+- Python experience is a plus
+
+What we're looking for:
+- Someone who wants to build from scratch
+- Comfortable with startup risk and reward
+- Excited about ownership and impact
+- Team player with entrepreneurial mindset
+- Quick learner who adapts easily
+
+Why join us:
+- Significant equity stake (0.5-1.5%)
+- Work on greenfield projects
+- Make high-impact decisions
+- Learn and grow rapidly
+- Flexible work environment
+
+Location: San Francisco (hybrid 3 days/week)
+Compensation: $100k-$140k + equity

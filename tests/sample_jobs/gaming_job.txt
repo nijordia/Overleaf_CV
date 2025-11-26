@@ -1,0 +1,45 @@
+Unity Game Developer - Multiplayer Games
+
+GameStudio is a fast-growing indie game studio known for creating immersive multiplayer experiences. We're looking for a talented Unity developer to join our team and help build our next hit game.
+
+About Us:
+We're an indie studio with 25 people, focused on creating innovative multiplayer games. Our last title reached 2M+ players, and we're working on something even bigger.
+
+What You'll Do:
+- Develop gameplay features using Unity and C#
+- Build and optimize multiplayer networking systems
+- Create interactive game mechanics and player experiences
+- Work with designers to bring creative visions to life
+- Optimize game performance across multiple platforms
+- Implement UI/UX elements for player interaction
+- Debug and fix issues in production
+
+Requirements:
+- 3+ years of Unity development experience
+- Strong C# programming skills
+- Experience with multiplayer game development
+- Understanding of game design principles
+- Knowledge of game optimization techniques
+- Portfolio of shipped games or game projects
+- Passion for gaming and interactive entertainment
+
+Nice to Have:
+- Experience with Unity's networking solutions (Netcode, Mirror, Photon)
+- Knowledge of game physics and animation systems
+- Experience with mobile game development (iOS/Android)
+- Familiarity with version control (Git)
+- Experience with 3D modeling or shader programming
+- Python scripting for tools development
+
+What We Offer:
+- Work on exciting game projects
+- Creative and collaborative environment
+- Flexible hours and remote work options
+- Game development tools and resources
+- Team game nights and playtesting sessions
+- Competitive salary and profit sharing
+
+Join us and create experiences that millions of players will love!
+
+Location: Remote or Los Angeles, CA
+Compensation: $80k-$120k + profit sharing

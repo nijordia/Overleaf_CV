@@ -1,0 +1,29 @@
+job_analysis_prompt: |
+  Analyze this job posting and provide:
+  1. Extract the EXACT role title (e.g., "Senior Software Engineer", "Data Scientist")
+  2. Identify 15-20 most important ATS keywords
+  3. Recommend best CV version: FAANG, Startup, Climate, or Gaming
+  4. Confidence score (0.0-1.0)
+  5. Generate 150-word ATS boost text with keywords
+
+  Rules:
+  - FAANG: AWS, Google, Meta, scale, microservices, distributed systems, cloud
+  - Startup: early-stage, agile, fast-paced, MVP, small team, founder mentality
+  - Climate: sustainability, environmental, carbon, renewable energy, ESG
+  - Gaming: games, unity, interactive, entertainment, player experience
+
+  Job posting: {job_text}
+
+  Respond in this EXACT format:
+  ROLE: [exact role title for header]
+  VERSION: [FAANG|Startup|Climate|Gaming]
+  CONFIDENCE: [0.0-1.0]
+  KEYWORDS: keyword1, keyword2, ...
+  ATS_TEXT: [150-word paragraph with relevant keywords naturally integrated]
+
+fallback_titles:
+  default: "Software Engineer"
+  data: "Data Engineer"
+  backend: "Backend Developer"
+  frontend: "Frontend Developer"
+  fullstack: "Full Stack Developer"

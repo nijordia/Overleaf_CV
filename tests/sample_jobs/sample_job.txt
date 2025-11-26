@@ -1,0 +1,13 @@
+Senior Software Engineer - AWS Infrastructure
+
+We are seeking an experienced Senior Software Engineer to join our cloud infrastructure team.
+You will work on large-scale distributed systems and microservices architecture.
+
+Requirements:
+- 5+ years of experience with Python and backend development
+- Strong expertise in AWS (EC2, S3, Lambda, CloudFormation)
+- Experience with Docker and Kubernetes
+- Knowledge of microservices architecture and distributed systems
+- Experience with CI/CD pipelines
+
+This is a great opportunity to work on high-scale systems at a leading tech company.
