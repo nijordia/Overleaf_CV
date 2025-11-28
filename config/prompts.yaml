@@ -1,10 +1,11 @@
 job_analysis_prompt: |
   Analyze this job posting and provide:
-  1. Extract the EXACT role title (e.g., "Senior Software Engineer", "Data Scientist")
-  2. Identify 15-20 most important ATS keywords
-  3. Recommend best CV version: FAANG, Startup, Climate, or Gaming
-  4. Confidence score (0.0-1.0)
-  5. Generate 150-word ATS boost text with keywords
+  1. Extract the EXACT company name (e.g., "Amazon", "Google", "Acme Corp")
+  2. Extract the EXACT role title (e.g., "Senior Software Engineer", "Data Scientist")
+  3. Identify 15-20 most important ATS keywords
+  4. Recommend best CV version: FAANG, Startup, Climate, or Gaming
+  5. Confidence score (0.0-1.0)
+  6. Generate 150-word ATS boost text with keywords
 
   Rules:
   - FAANG: AWS, Google, Meta, scale, microservices, distributed systems, cloud
@@ -12,9 +13,16 @@ job_analysis_prompt: |
   - Climate: sustainability, environmental, carbon, renewable energy, ESG
   - Gaming: games, unity, interactive, entertainment, player experience
 
+  Company name extraction:
+  - Look for company name in headers, footers, or "About us" sections
+  - Extract the main company name, not department (e.g., "Amazon" not "Amazon Logistics")
+  - If unclear, look for email domains, website URLs, or company mentions
+  - Avoid generic terms like "Company", "Inc", "Ltd" alone
+
   Job posting: {job_text}
 
   Respond in this EXACT format:
+  COMPANY: [company name only, no suffixes like Inc/Ltd unless part of brand]
   ROLE: [exact role title for header]
   VERSION: [FAANG|Startup|Climate|Gaming]
   CONFIDENCE: [0.0-1.0]

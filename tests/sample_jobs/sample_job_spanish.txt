@@ -1,0 +1,34 @@
+Google Cloud Platform
+Ingeniero de Datos Senior - AWS e Infraestructura Cloud
+
+Acerca de Google:
+Google Cloud Platform ofrece soluciones de nube de clase mundial para empresas de todos los tamaños.
+
+Descripción del puesto:
+Buscamos un Ingeniero de Datos Senior experimentado para unirse a nuestro equipo de infraestructura cloud.
+Trabajarás en sistemas distribuidos de gran escala y arquitectura de microservicios.
+
+Requisitos:
+- Más de 5 años de experiencia con Python y desarrollo backend
+- Amplia experiencia en AWS (EC2, S3, Lambda, CloudFormation)
+- Experiencia con Docker y Kubernetes
+- Conocimientos de arquitectura de microservicios y sistemas distribuidos
+- Experiencia con pipelines CI/CD
+- Habilidades de comunicación en español e inglés
+
+Responsabilidades:
+- Diseñar e implementar pipelines de datos escalables
+- Optimizar la infraestructura cloud para alto rendimiento
+- Colaborar con equipos multifuncionales
+- Mantener y mejorar sistemas de procesamiento de datos en tiempo real
+
+Esta es una gran oportunidad para trabajar en sistemas de alta escala en una empresa tecnológica líder.
+
+Ofrecemos:
+- Contrato indefinido
+- Trabajo remoto flexible
+- Desarrollo profesional continuo
+- Ambiente de trabajo colaborativo
+
+Contacto: empleo@google.com
+Sitio web: https://cloud.google.com

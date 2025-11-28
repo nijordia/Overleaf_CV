@@ -4,7 +4,7 @@ from openai import OpenAI
 from typing import Dict, List
 from dotenv import load_dotenv
 from .config_manager import ConfigManager
-from .utils import parse_ai_response, validate_version
+from .utils import parse_ai_response, validate_version, detect_language, extract_company_from_email
 from .logger import get_logger
 
 logger = get_logger(__name__)
@@ -51,10 +51,14 @@ class JobAnalyzer:
         Analyze job posting using GPT-4o-mini.
 
         Returns:
-            Dict with keys: role, version, confidence, keywords, ats_text
+            Dict with keys: role, version, confidence, keywords, ats_text, language
         """
         logger.info("Starting job posting analysis...")
         logger.debug(f"Job text length: {len(job_text)} characters")
+
+        # Detect language first
+        detected_language = detect_language(job_text)
+        logger.info(f"Detected language: {detected_language}")
 
         prompt_template = self.config.get_job_analysis_prompt()
         prompt = prompt_template.format(job_text=job_text)
@@ -84,9 +88,19 @@ class JobAnalyzer:
             logger.debug(f"AI response: {ai_response[:200]}...")
 
             result = parse_ai_response(ai_response)
-            logger.info(f"Parsed result - Role: {result['role']}, Version: {result['version']}, Confidence: {result['confidence']}")
+            logger.info(f"Parsed result - Company: {result['company']}, Role: {result['role']}, Version: {result['version']}, Confidence: {result['confidence']}")
+
+            # Add detected language to result
+            result['language'] = detected_language
 
             # Validate and fallback
+            if not result['company']:
+                logger.warning("No company extracted, trying email/URL extraction")
+                result['company'] = extract_company_from_email(job_text)
+                if not result['company']:
+                    logger.warning("No company found, using 'Unknown_Company'")
+                    result['company'] = 'Unknown_Company'
+
             if not result['role']:
                 logger.warning("No role extracted, using fallback title")
                 result['role'] = self.config.get_fallback_title()
@@ -99,7 +113,7 @@ class JobAnalyzer:
                 logger.warning("Zero confidence, setting to 0.5")
                 result['confidence'] = 0.5
 
-            logger.info(f"Analysis complete - Final: Role={result['role']}, Version={result['version']}")
+            logger.info(f"Analysis complete - Final: Company={result['company']}, Role={result['role']}, Version={result['version']}, Language={detected_language}")
             return result
 
         except Exception as e:
@@ -133,19 +147,31 @@ class JobAnalyzer:
         logger.info("Running fallback analysis (no API)")
         version = self._fallback_version_selection(job_text)
 
+        # Detect language
+        detected_language = detect_language(job_text)
+        logger.info(f"Detected language (fallback): {detected_language}")
+
+        # Try to extract company name
+        company = extract_company_from_email(job_text)
+        if not company:
+            logger.warning("No company found in fallback, using 'Unknown_Company'")
+            company = 'Unknown_Company'
+
         # Extract basic keywords
         keywords = self._extract_basic_keywords(job_text)
         logger.debug(f"Extracted {len(keywords)} keywords: {', '.join(keywords[:10])}...")
 
         result = {
+            'company': company,
             'role': self.config.get_fallback_title(),
             'version': version,
             'confidence': 0.5,
             'keywords': keywords[:20],
-            'ats_text': self._generate_basic_ats_text(keywords, version)
+            'ats_text': self._generate_basic_ats_text(keywords, version),
+            'language': detected_language
         }
 
-        logger.info(f"Fallback analysis complete - Role: {result['role']}, Version: {result['version']}")
+        logger.info(f"Fallback analysis complete - Company: {result['company']}, Role: {result['role']}, Version: {result['version']}, Language: {detected_language}")
         return result
 
     def _extract_basic_keywords(self, job_text: str) -> List[str]:

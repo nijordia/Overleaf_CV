@@ -59,12 +59,13 @@ class CVGenerator:
             print(f"Error updating header title: {e}")
             return False
         
-    def update_version_flags(self, version: str) -> bool:
+    def update_version_flags(self, version: str, language: str = 'en') -> bool:
         """
-        Update CV version flags in main.tex.
+        Update CV version flags and language flag in main.tex.
 
         Args:
             version: The CV version to activate (FAANG, Startup, Climate, Gaming)
+            language: The language to use ('es' for Spanish, 'en' for English)
 
         Returns:
             True if successful, False otherwise
@@ -75,7 +76,7 @@ class CVGenerator:
             with open(main_path, 'r', encoding='utf-8') as f:
                 lines = f.readlines()
 
-            # Find the flag lines (should be around lines 3-7)
+            # Find the flag lines (should be around lines 3-8)
             updated_lines = []
             flag_section = False
 
@@ -96,15 +97,22 @@ class CVGenerator:
                 else:
                     updated_lines.append(line)
 
-            # Insert the selected version flag after the newif declarations
+            # Find where to insert flags (after \newif\ifES which is after \newif\ifGaming)
             insert_index = None
             for i, line in enumerate(updated_lines):
-                if '\\newif\\ifGaming' in line:
+                if '\\newif\\ifES' in line:
                     insert_index = i + 1
                     break
 
             if insert_index is not None:
+                # Insert version flag
                 updated_lines.insert(insert_index, f'\\{version}true\n')
+                # Insert language flag if Spanish
+                if language == 'es':
+                    updated_lines.insert(insert_index + 1, '\\EStrue\n')
+                    print(f"Language flag set: Spanish")
+                else:
+                    print(f"Language flag set: English (default)")
             else:
                 print("Warning: Could not find flag declaration section")
                 return False
@@ -132,14 +140,15 @@ class CVGenerator:
 
         # Update ATS boost WITH keywords
         if not self.update_ats_boost(
-            analysis_result['ats_text'], 
+            analysis_result['ats_text'],
             analysis_result.get('keywords', [])  # Pass the extracted keywords
         ):
             print("Failed to update ATS boost text")
             success = False
 
-        # Update version flags
-        if not self.update_version_flags(analysis_result['version']):
+        # Update version flags and language flag
+        language = analysis_result.get('language', 'en')  # Default to English
+        if not self.update_version_flags(analysis_result['version'], language):
             print("Failed to update version flags")
             success = False
 

@@ -132,9 +132,12 @@ def generate(
         raise typer.Exit(1)
 
     # Display results
+    language_display = "Spanish" if analysis.get('language', 'en') == 'es' else "English"
     console.print(Panel.fit(
         f"[bold green]Job Analysis Complete[/bold green]\n\n"
+        f"[cyan]Company:[/cyan] {analysis.get('company', 'Unknown')}\n"
         f"[cyan]Role:[/cyan] {analysis['role']}\n"
+        f"[cyan]Language:[/cyan] {language_display}\n"
         f"[cyan]Keywords found:[/cyan] {len(analysis['keywords'])}\n"
         f"[cyan]AI Recommendation:[/cyan] {analysis['version']} "
         f"(Confidence: {format_confidence(analysis['confidence'])})",
@@ -186,9 +189,11 @@ def generate(
     console.print("[yellow]Updating CV files...[/yellow]")
 
     if generator.generate_cv(analysis):
+        language_display = "Spanish" if analysis.get('language', 'en') == 'es' else "English"
         console.print(f"   [green]Header title updated:[/green] {analysis['role']}")
         console.print("   [green]ATS boost updated[/green] with job keywords")
         console.print(f"   [green]Version flags updated:[/green] {analysis['version']} activated")
+        console.print(f"   [green]Language set:[/green] {language_display}")
     else:
         console.print("[red]Error updating CV files[/red]")
         raise typer.Exit(1)
@@ -196,18 +201,22 @@ def generate(
     # Compile PDF
     console.print("[yellow]Compiling PDF...[/yellow]")
 
-    # Generate output filename
+    # Generate output filename based on company name
     if not output:
-        output = sanitize_filename(analysis['role'])  # Remove _{analysis['version'].lower()}
+        company_name = analysis.get('company', 'Unknown_Company')
+        output = f"Aguilar_{sanitize_filename(company_name)}"
 
     if generator.compile_pdf(output):
         console.print(f"[bold green]Success! CV generated:[/bold green] output/{output}.pdf")
 
         # Show summary
+        language_display = "Spanish" if analysis.get('language', 'en') == 'es' else "English"
         summary = Panel.fit(
             f"[bold]CV Generation Summary[/bold]\n\n"
+            f"[cyan]Company:[/cyan] {analysis.get('company', 'Unknown')}\n"
             f"[cyan]Job Title:[/cyan] {analysis['role']}\n"
             f"[cyan]CV Version:[/cyan] {analysis['version']}\n"
+            f"[cyan]Language:[/cyan] {language_display}\n"
             f"[cyan]Keywords:[/cyan] {len(analysis['keywords'])}\n"
             f"[cyan]Output:[/cyan] output/{output}.pdf\n"
             f"[cyan]ATS Optimized:[/cyan] Yes",
