@@ -1,100 +1,48 @@
+You want to join a company that places people at the heart of its concerns? We are waiting for you at Extia!
 
-ExoClick logo
-ExoClick
-Data Analyst 
-Barcelona, Catalonia, Spain · 21 hours ago · 39 people clicked apply
+Extia is an engineering consultancy which proposes since 2007 an unprecedented approach in its sector by combining well-being and performance at work. A successful model: more than 3000 Extians working in 22 agencies in France and abroad, 1st Great Place To Work® in France, 160 millions of euros of turnover and plenty of energy!
 
-Promoted by hirer · Responses managed off LinkedIn
-Data Analyst
-ExoClick · Barcelona, Catalonia, Spain (Hybrid)
-See recent hiring trends for Amaris Consulting
+At Extia, it's "First who, then what" so, let's do it!
 
-Access exclusive applicant insights, see jobs where you have the highest chance of hearing back, and more.
-Reactivate Premium: 50% Off
-People you can reach out to
-
-    Amazon logo
-
-Amazon logo
-Company alumni from Amazon
-About the job
-
-About ExoClick: 
+First who
 
 
-ExoClick is an innovative and global ad company serving 20 billion daily geo-targeted ads to web and mobile advertisers & publishers. We are part of EXOGROUP, a set of companies made up of +200 talents and offering a wide range of services within the digital business landscape with headquarters in Barcelona and offices in Dublin, Porto and Valencia.
+    Committed and always ready to help your team
+    Proactive, you enjoy projects that move forward quickly and efficiently
+    Organized
 
 
-Role
+Then what
+
+Within an Agile team (Scrum / Kanban), you will participate in the following missions:
 
 
-As a Data Analyst you will be part of the Analytics team at EXOGROUP, which is a highly skilled and qualified department that has diverse responsibilities.
+    Analyzing the needs expressed by the Product Owner
+    Implementing engineering best practices to ensure the quality of deliveries (TDD / BDD / clean code / code reviews...)
+    Software and technical design
+    Deploying applications in collaboration with the team’s OPS or maintaining the application
+    Improving the usability of the applications developed by the features team
+    Writing technical documentation
+    Participating in the team's Agile ceremonies (DSM, Sprint planning, retrospectives, ...) and contributing to their continuous improvement
 
 
-Together with the Director of Analytics & Data Science and the Analytics team you will develop and maintain data reports that provide critical business visibility on key revenue and profit trends, by product, market, vertical and traffic sources. Additionally, you will collaborate with IT and Product teams to identify potential improvements in the platform by analysing and designing algorithms.
+Education and Experience:
 
 
-Tasks
+    1 or 2 years programming with JS
+    Knowledge of frameworks (React/Node)
+    Engineering studies, multiplatform app degrees, or bootcamp
 
 
-    Structure masses of information, identify data-driven trends and understand what really matters and why.
-    Collect KPIs and design/define visualizations.
-    Deliver insights and analytics across the company's operation and advertising departments.
-    Ability to identify and escalate issues and opportunities ahead of time helping to reduce impact and improve financial / performance implications.
-    Develop and maintain different internal applications and dashboards.
-    Together with the Analytics team, you will develop and promote actionable insights to increase the profitability of the company.
+What we offer at Extia:
 
 
-Skills
-
-
-    You thrive on data and have a highly analytical mind.
-    Degree in computer science or mathematical sciences.
-    Managing and prioritising workload, taking ownership of all assigned tasks.
-    You feel comfortable retrieving, cleaning, tidying and processing data from different sources and formats. You have a general understanding of how web applications work.
-    You have programming experience in Python.
-    You are familiar with SQL and Git.
-    Experience with advanced statistical methodology, data and datasets is a plus.
-    Strong verbal and written communication skills.
-    The desire and agility to work in a fast-paced and ever evolving environment.
-
-
-What you'll find working at ExoClick:
-
-
-We offer a position in a young, dynamic and international team with exceptional working conditions in unique offices high up in the Torre Mapfre, one of Barcelona's world-renowned landmarks, located right on the city's seafront.
-
-Additionally, we offer the opportunity for permanent training, personal development, ambitious career growth, and a competitive salary.
-
-
-Most of all, we offer a position in a team that thrives on achievement, success, and leadership within our industry. Our core company value is innovation: where people and creativity drive innovative technology. If you have an innovative, winning mentality, this position is for you!
-
-
-Our company benefits:
-
-
-    Flexitime and summer schedule;
-    Private health insurance;
-    Your Birthday off as a paid holiday;
-    Flexible compensation plan: travel, meals & childcare;
-    Additional internal and external training through our EXOGROUP University program;
-    English, Portuguese & Spanish classes;
-    training budget & study leave;
-    Employee referral program bonus - You can earn 2500Eur by referring someone!
-    Exciting team buildings in locations such as Ibiza;
-    Office games room/chill-out zone;
-    Organic fruit;
-    Monday team breakfast;
-    Subsidised Well-Being activities;
-    Calm App;
-    Yoga classes;
-    Massages;
-    Subsidized catering;
-    Flexible remote work;
-    Home office set up budget of 500 Eur;
-
-
-Is this not the right role for you? Then make sure to check out all other roles we have open for you on our careers website.
-
-
-The companies that are part of EXOGROUP are the data controllers regarding your personal data, in order to consider your application for present or future vacancies in our organization. For more information about the processing of your personal data and on how to exercise your rights of access, rectification, suppression, limitation, portability and opposition please visit the Protection Informative Clause Candidates.
+    Personalized career plan
+    Meal vouchers
+    Private health insurance
+    Public transport reimbursement
+    Young and international work environment
+    Office just a few meters from the beach
+    Free drinks (beer, coffee, water, tea, milk)
+    Hybrid work model (3 days remote, 2 days in-office)
+    Events (trainings, meetups, after-work, parties)

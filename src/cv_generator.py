@@ -154,21 +154,15 @@ class CVGenerator:
 
         return success
 
-
-
-
     def compile_pdf(self, output_name: Optional[str] = None) -> bool:
         """
-        Compile LaTeX to PDF using pdflatex.
-
-        Args:
-            output_name: Optional custom output filename
-
-        Returns:
-            True if compilation successful
+        Compile LaTeX to PDF using pdflatex with automatic cleanup.
         """
         try:
-            # Check if pdflatex is available
+            # Step 1: Clean up any existing main.pdf first
+            self._cleanup_main_pdf()
+            
+            # Step 2: Check if pdflatex is available
             result = subprocess.run(
                 ['pdflatex', '--version'],
                 capture_output=True,
@@ -180,8 +174,8 @@ class CVGenerator:
                 print("Error: pdflatex not found. Please ensure MiKTeX is installed.")
                 return False
 
-            # Compile LaTeX (run twice for references)
-            for _ in range(2):
+            # Step 3: Compile LaTeX (run twice for references)
+            for i in range(2):
                 result = subprocess.run(
                     ['pdflatex', '-interaction=nonstopmode', 'main.tex'],
                     capture_output=True,
@@ -189,13 +183,13 @@ class CVGenerator:
                     timeout=60
                 )
 
-                # Check if PDF was created (pdflatex may return non-zero even on success with warnings)
+                # Check if PDF was created
                 if not Path('main.pdf').exists():
                     print("LaTeX compilation failed:")
                     print(result.stdout)
                     return False
 
-            # Move PDF to output directory if custom name provided
+            # Step 4: Move PDF to output directory with retry logic
             if output_name:
                 output_dir = Path('output')
                 output_dir.mkdir(exist_ok=True)
@@ -203,8 +197,26 @@ class CVGenerator:
                 source_pdf = Path('main.pdf')
                 if source_pdf.exists():
                     target_pdf = output_dir / f"{output_name}.pdf"
-                    source_pdf.rename(target_pdf)
-                    print(f"PDF generated: {target_pdf}")
+                    
+                    # Retry logic for file move
+                    for attempt in range(3):
+                        try:
+                            # Remove target if it exists
+                            if target_pdf.exists():
+                                target_pdf.unlink()
+                            
+                            source_pdf.rename(target_pdf)
+                            print(f"PDF generated: {target_pdf}")
+                            break
+                        except PermissionError as e:
+                            if attempt < 2:  # Try 3 times total
+                                print(f"File locked, waiting... (attempt {attempt + 1}/3)")
+                                import time
+                                time.sleep(2)  # Wait 2 seconds and try again
+                            else:
+                                print(f"Error: Could not move PDF after 3 attempts. {e}")
+                                print("The PDF was generated as 'main.pdf' in the project root.")
+                                return True  # Still successful, just not moved
 
             return True
 
@@ -217,6 +229,25 @@ class CVGenerator:
         except Exception as e:
             print(f"Error compiling PDF: {e}")
             return False
+
+    def _cleanup_main_pdf(self):
+        """Clean up main.pdf before compilation with retry logic."""
+        main_pdf = Path('main.pdf')
+        if main_pdf.exists():
+            for attempt in range(3):
+                try:
+                    main_pdf.unlink()
+                    print("Cleaned up previous main.pdf")
+                    break
+                except PermissionError:
+                    if attempt < 2:
+                        print(f"main.pdf is locked, waiting... (attempt {attempt + 1}/3)")
+                        import time
+                        time.sleep(2)
+                    else:
+                        print("Warning: Could not delete main.pdf (file may be open in PDF viewer)")
+                        print("Please close any PDF viewers and try again") 
+
 
     def cleanup_latex_artifacts(self):
         """Remove LaTeX auxiliary files."""
