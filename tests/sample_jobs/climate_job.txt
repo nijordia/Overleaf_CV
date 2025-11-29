@@ -1,0 +1,46 @@
+Data Scientist - Climate Analytics Platform
+
+ClimateAI is on a mission to combat climate change through data-driven insights. We're seeking a passionate Data Scientist to join our climate analytics team and help organizations reduce their carbon footprint.
+
+About ClimateAI:
+We're building a platform that helps companies measure, track, and reduce their environmental impact. Our mission is to make sustainability actionable through data science and machine learning.
+
+Role Overview:
+You'll work on analyzing climate data, building predictive models for carbon emissions, and developing tools to help organizations make data-driven sustainability decisions.
+
+Responsibilities:
+- Process and analyze large climate datasets (GRIB, NetCDF formats)
+- Build machine learning models for emissions forecasting
+- Develop algorithms for carbon footprint calculation
+- Work with scientific computing libraries (NumPy, Pandas, SciPy)
+- Collaborate with climate scientists and engineers
+- Create data visualizations and dashboards
+- Handle geospatial data and climate model outputs
+
+Requirements:
+- 3+ years of data science or scientific computing experience
+- Strong Python skills with scientific libraries
+- Experience with climate data or environmental science
+- Knowledge of machine learning and statistical modeling
+- Familiarity with NetCDF, GRIB, or HDF5 file formats
+- Experience with data processing on HPC environments
+- Understanding of geospatial analysis
+
+Nice to have:
+- Background in environmental science or meteorology
+- Experience with R for statistical analysis
+- Knowledge of renewable energy systems
+- Experience with cloud platforms (AWS, GCP)
+- Familiarity with climate models (CMIP, ERA5)
+
+Why join us:
+- Make a real impact on climate change
+- Work with cutting-edge climate data
+- Collaborate with domain experts
+- Purpose-driven mission and team
+- Competitive salary and benefits
+
+Location: Remote or Berlin, Germany
+Compensation: $90k-$130k + equity + benefits
+
+Help us build a more sustainable future!

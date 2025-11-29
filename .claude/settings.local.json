@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(python main.py:*)",
+      "Bash(pip install:*)",
+      "Bash(cat:*)",
+      "Bash(python:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(git checkout:*)",
+      "Bash(tasklist:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,72 @@
+cv_versions:
+  FAANG:
+    description: "Large tech companies - AWS, scale, microservices focus"
+    tex_flag: "FAANG"
+  Startup:
+    description: "Early-stage companies - agility, full-stack focus"
+    tex_flag: "Startup"
+  Climate:
+    description: "Environmental/sustainability roles"
+    tex_flag: "Climate"
+  Gaming:
+    description: "Entertainment/interactive media"
+    tex_flag: "Gaming"
+
+file_targets:
+  header_file: "sections/header.tex"
+  header_title_pattern: "(\\{\\\\large\\\\bfseries )([^}]+)(\\}\\\\par)"
+  main_file: "main.tex"
+  sidebar_file: "sections/sidebar.tex"
+  sidebar_ats_pattern: "\\\\atsboost\\{[^}]*\\}"  # Simple and clean
+
+ats_config:
+  max_keywords: 20
+  boost_text_length: 150
+
+version_keywords:
+  FAANG:
+    - amazon
+    - aws
+    - google
+    - meta
+    - facebook
+    - scale
+    - microservices
+    - distributed
+    - cloud
+    - large-scale
+    - big tech
+    - enterprise
+  Startup:
+    - startup
+    - early-stage
+    - agile
+    - fast-paced
+    - mvp
+    - small team
+    - founder
+    - scrappy
+    - growth
+    - venture
+  Climate:
+    - climate
+    - sustainability
+    - environmental
+    - carbon
+    - esg
+    - green
+    - renewable
+    - energy
+    - emissions
+    - net-zero
+  Gaming:
+    - game
+    - gaming
+    - unity
+    - entertainment
+    - interactive
+    - player
+    - gameplay
+    - game-dev
+    - studio
+    - multiplayer

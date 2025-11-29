@@ -1,41 +1,65 @@
 %%% SIDEBAR: SKILLS & LANGUAGES %%%
 \begin{tcolorbox}[colback=backdrop, colframe=backdrop, coltext=black, arc=0mm]
     
+    \ifES
+    \subsection*{Acerca de}
+    \noindent
+    \small
+    \lowercase{\jobtitle} ingenioso y apasionado por la tecnología, en busca de nuevos desafíos.
+    Experiencia en ETLs, almacenamiento de datos, diseño de dashboards y analítica web;
+    especialista en transformar datos en acciones medibles.
+    Comprometido con el equipo y mentalidad multidisciplinaria.
+    \else
     \subsection*{About}
     \noindent
     \small
-    Resourceful data engineer eager for new challenges.
-    Experienced in automation, dashboards, and web analytics and
+    Resourceful {\jobtitle} and tech geek eager for new challenges.
+    Experienced in ETLs, data warehouse, dashboards, and web analytics and
     a specialist in digesting complex data into measurable actions.
     Committed team player with a multidisciplinary mindset.
-    \atsboost{Ideal candidate. Expert in R packages, Python, scientific computing, climate data processing, GRIB NetCDF files, HPC environments. Top performer with proven track record in data analysis, machine learning, and automation.}
+    \fi
     
+    
+    \atsboost{As a proactive Software Engineer with 1-2 years of experience in JavaScript and frameworks like React and Node, I thrive in Agile environments utilizing Scrum and Kanban methodologies. My commitment to engineering best practices, including TDD and BDD, ensures high-quality code through rigorous code reviews and clean coding standards. I excel in analyzing needs with Product Owners and improving application usability while actively participating in Agile ceremonies to foster continuous improvement. My experience in a fast-paced startup setting has equipped me with a founder mentality, allowing me to contribute effectively to team collaboration and project success. I am eager to leverage my skills in a dynamic and innovative workplace like Extia, where well-being and performance are prioritized.}
+    \vspace{-1em}
 
-    \vspace{1em}
+
     
+    \ifES
+    \subsection*{Programación}
+    \else
     \subsection*{Programming Languages}
+    \fi
     \noindent
-    \skillbadgeats[for data analysis, machine learning, automation, forecasting, game development, web scraping and API development]{python}
-    \skillbadgeats[frontend backend Node.js React and svelte 5 with runes]{JavaScript}\\[0.3em]
-    \skillbadgeats[database queries data manipulation]{Sqlite}
-    \skillbadgeats[web development markup language]{HTML}\\[0.3em]
-    \skillbadgeats[document preparation typesetting]{LaTeX}
-    \skillbadgeats[for statistical analysis data science and geospatial analysis]{R}
+    \skillbadgeats[for data analysis machine learning automation forecasting with pandas numpy scipy matplotlib seaborn plotly data visualization web frameworks FastAPI Django Flask Streamlit REST APIs data science scikit-learn tensorflow pytorch keras deep learning neural networks jupyter notebooks cloud deployment boto3 AWS SDK docker-py containerization requests HTTP asyncio asynchronous programming database connectivity sqlalchemy pymongo psycopg2 PostgreSQL testing pytest unittest mock web scraping BeautifulSoup selenium API development data pipelines ETL workflows data engineering]{python}
+    \skillbadgeats[frontend backend full stack development Node.js Express.js React Vue.js Svelte 5 with runes TypeScript modern JavaScript ES6 ES7 webpack bundling npm package management async await promises DOM manipulation event handling AJAX fetch API single page applications SPA component-based architecture state management Redux Vuex responsive web design progressive web apps PWA serverless functions]{JavaScript}\\[0.3em]
+    \skillbadgeats[database queries data manipulation SQL PostgreSQL MySQL MongoDB SQLite joins inner join left join right join indexing query optimization database design normalization stored procedures transactions ACID principles aggregation group by subqueries views triggers database administration performance tuning]{Sqlite}
+    \skillbadgeats[web development markup language HTML5 semantic HTML CSS CSS3 Bootstrap Tailwind responsive design mobile-first design flexbox grid layout media queries accessibility ARIA WCAG standards cross-browser compatibility front-end development user interface UI design web standards]{HTML}\\[0.3em]
+    \skillbadgeats[document preparation typesetting LaTeX document classes article report book thesis packages bibliography BibTeX citations references mathematics mathematical typesetting equations academic writing technical documentation publishing formatting]{LaTeX}
+    \skillbadgeats[for statistical analysis data science geospatial analysis ggplot2 data visualization dplyr tidyverse data manipulation tidyr statistical modeling regression analysis hypothesis testing ANOVA linear models generalized linear models time series analysis forecasting predictive analytics R Markdown reporting shiny interactive applications data wrangling]{R}
 
     \vspace{1em}
         
+    \ifES
+    \subsection*{Cloud y Herramientas}
+    \else
     \subsection*{Cloud \& Tools}
+    \fi
     \noindent
-    \skillbadgeats[for cloud computing EC2, storage and data warehouse with S3 buckets and S3 Lambda]{Aws}
-    \skillbadgeats[for containerization deployment DevOps]{Docker}\\[0.3em]
+    \skillbadgeats[for cloud computing Amazon Web Services EC2 virtual servers compute instances S3 storage buckets object storage data warehouse Lambda serverless functions RDS relational database service DynamoDB CloudFormation infrastructure as code IAM identity access management VPC networking CloudWatch monitoring SNS SQS messaging services API Gateway Elastic Beanstalk cloud architecture scalability]{Aws}
+    \skillbadgeats[for containerization deployment DevOps Docker containers Kubernetes K8s orchestration container orchestration microservices Docker Compose multi-container applications dockerfile image building container registry deployment automation CI/CD continuous integration continuous deployment infrastructure scalability cloud-native applications]{Docker}\\[0.3em]
     \skillbadgeats[system administration command line]{Linux}
     \skillbadgeats[for browser automation scripting for simplifying process and reducing manual errors]{Tampermonkey}\\[0.3em]
-    \skillbadgeats[for version control collaboration and organized project development]{Git}
+    \skillbadgeats[for version control collaboration organized project development Git GitHub GitLab Bitbucket branching strategies merging pull requests code review CI/CD pipelines continuous integration continuous deployment version control systems distributed version control Git workflows Git flow trunk-based development collaboration software development lifecycle]{Git}
     \skillbadgeats[LaTeX online editor collaboration]{Overleaf}
    
     \vspace{1em}
         
+    \ifES
+    \subsection*{Idiomas}
+    \else
     \subsection*{Languages}
+    \fi
     \noindent
     \langbadgeats[fluent speaker native proficiency]{Spanish}{Native}\\[0.3em]
     \langbadgeats[business proficient international communication]{English}{Fluent}\\[0.3em]
@@ -44,11 +68,19 @@
 
     \vspace{1em}
 
+    \ifES
+    \subsection*{Herramientas IA}
+    \else
     \subsection*{AI Tools}
+    \fi
     \noindent
-    \ailogoats[artificial intelligence chatbot GPT-4 prompt engineering]{ChatGPT\_logo}
+    \ailogoats[artificial intelligence chatbot GPT-4 prompt engineering and API connection for developing custom apps and chatbots.]{ChatGPT\_logo}
     \ailogoats[Claude AI assistant Anthropic prompt engineering]{Claude\_AI\_logo}\\[0.4em]
     \ailogoats[Amazon Q developer assistant AWS code generation]{amazon\_q\_logo}
     \ailogoats[GitHub Copilot AI pair programming system integration]{githubcopilot}
 
+    \vspace{-1em}
+    \atsboost{BI Developer, data analysis, KPI, Tableau, SQL, data models, cross-functional teams, business requirements, automation, data consistency, reporting tools, root cause analysis, communication skills, financial KPIs, stakeholder training}
+
+    
 \end{tcolorbox}

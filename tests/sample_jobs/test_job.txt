@@ -1,0 +1,48 @@
+You want to join a company that places people at the heart of its concerns? We are waiting for you at Extia!
+
+Extia is an engineering consultancy which proposes since 2007 an unprecedented approach in its sector by combining well-being and performance at work. A successful model: more than 3000 Extians working in 22 agencies in France and abroad, 1st Great Place To Work® in France, 160 millions of euros of turnover and plenty of energy!
+
+At Extia, it's "First who, then what" so, let's do it!
+
+First who
+
+
+    Committed and always ready to help your team
+    Proactive, you enjoy projects that move forward quickly and efficiently
+    Organized
+
+
+Then what
+
+Within an Agile team (Scrum / Kanban), you will participate in the following missions:
+
+
+    Analyzing the needs expressed by the Product Owner
+    Implementing engineering best practices to ensure the quality of deliveries (TDD / BDD / clean code / code reviews...)
+    Software and technical design
+    Deploying applications in collaboration with the team’s OPS or maintaining the application
+    Improving the usability of the applications developed by the features team
+    Writing technical documentation
+    Participating in the team's Agile ceremonies (DSM, Sprint planning, retrospectives, ...) and contributing to their continuous improvement
+
+
+Education and Experience:
+
+
+    1 or 2 years programming with JS
+    Knowledge of frameworks (React/Node)
+    Engineering studies, multiplatform app degrees, or bootcamp
+
+
+What we offer at Extia:
+
+
+    Personalized career plan
+    Meal vouchers
+    Private health insurance
+    Public transport reimbursement
+    Young and international work environment
+    Office just a few meters from the beach
+    Free drinks (beer, coffee, water, tea, milk)
+    Hybrid work model (3 days remote, 2 days in-office)
+    Events (trainings, meetups, after-work, parties)

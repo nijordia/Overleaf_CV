@@ -181,6 +181,12 @@
     \hspace{0.8em}%  % <- Changed from 0.3em to 0.8em for bigger spacing
 }
 
+%%%%%%%%%%%%%%% DYNAMIC JOB TITLE %%%%%%%%%%%%%%%
+\newcommand{\jobtitle}{Software Engineer}  % Default value
+\newcommand{\setjobtitle}[1]{\renewcommand{\jobtitle}{#1}}
+
+
+
 %%%%%%%%%%%%%%% HIDDEN ATS OPTIMIZATION %%%%%%%%%%%%%%%
 \newcommand{\atsboost}[1]{%
     \llap{\textcolor{white}{\fontsize{0.01pt}{0.01pt}\selectfont #1}}%

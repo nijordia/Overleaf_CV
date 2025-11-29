@@ -1,0 +1,30 @@
+Senior Software Engineer - AWS Infrastructure Team
+
+Amazon Web Services is seeking an experienced Senior Software Engineer to join our cloud infrastructure team. You will work on large-scale distributed systems that power AWS services used by millions of customers worldwide.
+
+Responsibilities:
+- Design and build highly scalable distributed systems
+- Work with AWS services including EC2, S3, Lambda, DynamoDB
+- Lead architecture decisions for microservices
+- Mentor junior engineers on the team
+- Participate in on-call rotation for production systems
+
+Requirements:
+- 5+ years of software engineering experience
+- Strong proficiency in Python, Java, or Go
+- Deep understanding of distributed systems and microservices architecture
+- Experience with AWS cloud services
+- Knowledge of Docker, Kubernetes, and container orchestration
+- Experience with CI/CD pipelines and DevOps practices
+- Strong problem-solving skills and attention to detail
+
+Nice to have:
+- Experience with high-traffic production systems
+- Knowledge of infrastructure as code (CloudFormation, Terraform)
+- Experience with monitoring and observability tools (CloudWatch, Datadog)
+- Computer Science degree or equivalent
+
+This role offers the opportunity to work on systems at massive scale, impacting millions of customers globally. Join one of the world's leading tech companies and help shape the future of cloud computing.
+
+Location: Seattle, WA or remote
+Compensation: $180k-$250k + equity + benefits
